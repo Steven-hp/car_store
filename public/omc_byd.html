@@ -1,0 +1,105 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/comm.css"/>
+	</head>
+	<body>
+		<header>
+			<iframe class="my_header" scrolling="no" src="header.html"></iframe>
+		</header>
+		<div class="container">
+			<!-- 头部导航栏 -->
+			<!-- 轮播图 -->
+			<div class="mt-0">
+				<div id="demo" class="carousel" data-ride="carousel">
+					<!-- 轮播的图片 -->
+					<!--           宽百分百，溢出隐藏  -->
+					<div class="carousel-inner">
+						<!--           隐藏 -->
+						<div class="carousel-item active">
+							<img class="w-100" src="img/1920.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<img class="w-100" src="img/1920x600.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<img class="w-100" src="img/pc.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<img class="w-100" src="img/qpr-pc.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<img class="w-100" src="img/songmax_pckv.jpg" alt="">
+						</div>
+					</div>
+					<!-- 轮播的指示器 -->
+					<ul class="carousel-indicators">
+						<li data-target="#demo" data-slide-to="0" class="active"></li>
+						<li data-target="#demo" data-slide-to="1" ></li>
+						<li data-target="#demo" data-slide-to="2" ></li>
+						<li data-target="#demo" data-slide-to="3" ></li>
+						<li data-target="#demo" data-slide-to="4" ></li>
+					</ul>
+					<!-- 左右箭头 -->
+					<a data-slide="next" href="#demo" class="carousel-control-next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+					<a data-slide="prev" href="#demo" class="carousel-control-prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+				</div>
+			</div>
+			<!-- 汽车系列列表 -->
+			<div class="byd_color">
+				<ul class="nav nav-tabs justify-content-around">
+								<!--                        触发事件的元素                        目标id -->
+								<li class="nav-item"><a data-toggle="tab" class="nav-link active" href="#t1">快速选车</a></li>
+								<li class="nav-item"><a data-toggle="tab" class="nav-link" href="#t2">比亚迪王朝系列</a></li>
+								<li class="nav-item"><a data-toggle="tab" class="nav-link" href="#t3">王朝秦</a></li>
+								<li class="nav-item"><a data-toggle="tab" class="nav-link" href="#t4">王朝汉</a></li>
+								<li class="nav-item"><a data-toggle="tab" class="nav-link" href="#t5">王朝唐</a></li>
+								<li class="nav-item"><a data-toggle="tab" class="nav-link" href="#t6">王朝宋</a></li>
+							</ul>
+							<div class="tab-content ">
+								<!--                目标元素div.tab-pane -->
+								<div id="t1" class="tab-pane active"><img class="w-100" src="img/01.jpg" ></div>
+								<div id="t2" class="tab-pane"><img class="w-100" src="img/4.jpg" ></div>
+								<div id="t3" class="tab-pane"><img class="w-100" src="img/3.jpg" ></div>
+								<div id="t4" class="tab-pane"><img class="w-100" src="img/01.jpg" ></div>
+								<div id="t5" class="tab-pane"><img class="w-100" src="img/02.jpg" ></div>
+								<div id="t6" class="tab-pane"><img class="w-100" src="img/03.jpg" ></div>
+							</div>
+			</div>
+			<!-- 服务列表 -->
+			<div class="text-dark mt-3 font-weight-bold byd_size">$￥至尊V8服务列表</div>
+			<div class="row no-gutters mt-1">
+					<div class="col-lg-6 pr-1 pb-1 "><img class="w-100" src="img/1.jpg" alt=""></div>
+					<div class="col-lg-6 pb-1 "><img class="w-100" src="img/hd-0514.jpg" alt=""></div>
+					<div class="col-lg-6 pr-1 pb-1 "><img class="w-100" src="img/3.jpg" alt=""></div>
+					<div class="col-lg-6 pb-1 "><img class="w-100" src="img/4.jpg" alt=""></div>
+			</div>
+			<!-- 尾部导航栏 -->
+			<div>
+				<div class="byd-having">
+					<ul>
+						<li><a href="">体验</a></li>
+						<li><a href="">活动</a></li>
+						<li><a href="">整车</a></li>
+						<li><a href="">咨询</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 尾部 -->
+		<footer>
+			<iframe class="my_footer" scrolling="no" src="footer.html"></iframe>
+		</footer>
+		</div>
+	</body>
+</html>

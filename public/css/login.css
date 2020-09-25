@@ -1,0 +1,130 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background:url(../img/651.jpg),no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.login-one{
+	color: #FF0000;
+}
+.havig{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 40px;
+	background-color: #5D5E62;
+	text-align: center;
+}
+.havig>ul>li{
+	display: inline-block;
+	width: auto;
+  padding: 8px 30px;
+}
+.havig a{
+	text-decoration: none;
+	color: #fff;
+}
+.login-one{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.login-right{
+	width: 426px;
+	height: 435px;
+	padding: 32px;
+	flex-direction: column;
+	margin-top: 220px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	margin-left: 60%;
+}
+.login-h2,.login-name,.login-email,.login-psw,.login-psws,.login-agree,.login-log,p,.login-reg{
+	margin-bottom: 10px;
+}
+.login-name>input,.login-email>input,.login-psw>input,.login-psws>input{
+	/* width: 393px; */
+	width: 92%;
+	padding: 10px;
+	border: 1px solid #fff;
+	border-radius: 4px;
+}
+.login-a{
+	/* width: 226px; */
+	width: 53%;
+	height: 30px;
+	background-color: rgba(0,0,0,0.2);
+	border-radius: 2em;
+	color: #f00;
+	border: 2px solid #fff;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	line-height: 30px;
+	transition: 0.5s all;
+}
+.login-a:hover {
+    background:	rgba(9, 235, 156, 0.44);  
+    color: #fff;
+	transition: 0.5s ease-in;
+	font-family: 'PT Sans', sans-serif;
+}
+.reg a {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 4px;
+    width: 55%;
+    margin: 18px auto;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 2em;
+    background: #3b5998;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    font-family: 'PT Sans', sans-serif;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	transition: 0.5s all;
+}
+.login-agree a{
+	color: #FF0000;
+	text-decoration: none;
+	font-size: 15px;
+}
+.login-h2>h2{
+	font-size: 25px;
+	font-weight: 300;
+}
+.login-footer{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	list-style: none;
+	text-align: center;
+	margin-top: 5%;
+	color: #b1b2b7;
+}
+.login-footer>ul{
+	text-align: center;
+}
+.login-stern>li{
+	display: inline-block;
+}
+.login-stern li a{
+	font-size: 15px;
+	color: #b1b2b7;
+	text-decoration: none;
+}
