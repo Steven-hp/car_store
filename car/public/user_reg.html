@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>汽车之家用户注册</title>
+		<script type="text/javascript">
+			//获取用户输入的信息
+				
+				function show_uname(){
+					//提示账号长度
+					uname_msg.innerHTML="用户名在8-12位之间"
+				}
+				function check_uname(){
+					//0.获取用户填入的内容
+					var _uname1=uname.value;
+					//1.非空验证
+					if(!_uname1){//_uname没有值会进if
+					uname_msg.innerHTML="用户名不能为空";
+					//2.格式验证
+					}else if(_uname1.length>=8 && _uname1.length<=12){
+					uname_msg.innerHTML="√";
+					console.log(_uname1)
+				  }else{
+					uname_msg.innerHTML="请重新输入";
+					//console.log(_uname1);
+				  }
+					}
+					function show_upwd(){
+						upwd_msg.innerHTML="密码在6-8位之间";
+					}
+					function check_upwd(){
+						//0.获取用户填入的内容
+						var _upwd1=upwd.value;
+						//1.非空验证
+						if(!_upwd1){
+							upwd_msg.innerHTML="密码不能为空";
+							//2.格式验证
+						}else if(_upwd1.length>=6 && _upwd1.length<=8){
+							upwd_msg.innerHTML="√";
+							console.log(upwd_msg.innerHTML);
+						}else{
+							upwd_msg.innerHTML="请重新输入";
+						}
+					}
+					function show_upwds(){
+						upwds_msg.innerHTML="重新输入，密码须保持一致";
+					}
+					function check_upwds(){
+						var _upwds1=upwds.value;
+					  //非空验证
+						if(!_upwds1){
+							upwds_msg.innerHTML="密码不能为空"
+							//验证
+						}else if(upwds.value==upwd.value){
+							upwds_msg.innerHTML="√"
+						}else{
+							upwds_msg.innerHTML="密码不一致，请重新输入";
+						}
+					}
+					function darker(){
+						var _upwd=upwd.value;
+						var _upwds=upwds.value;
+						var _uname=uname.value;
+					//1.创建异步对象
+					var xhr=new XMLHttpRequest();
+					//4.接收响应，打开监听
+					xhr.onreadystatechange=function(){
+						//判断    筛选第四遍     状态为200
+						if(xhr.readyState==4 && xhr.status==200){
+							//自动把响应保存在xhr.responseText
+							var r=xhr.responseText;
+							r=JSON.parse(r);
+							//判断输入信息
+							if(r==1 && (uname_msg.innerHTML=="√" && upwd_msg.innerHTML=="√" && upwds_msg.innerHTML=="√")){
+								alert("注册成功");
+								location.href="user_login.html";
+							}else{
+								d1.innerHTML="注册失败";
+							}
+						}
+					}
+					//2.创建请求，打开连接
+					xhr.open("post","/user/v1/reg",true);
+					//3.发送请求
+					//3.1创建请求主体
+					//3.2设置请求头信息
+					var formdata=`uname=${_uname}&upwd=${_upwd}`;
+					xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+					xhr.send(formdata);
+			}
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Transitive register form a Flat Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!-- Meta tag Keywords -->
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+		<link rel="stylesheet" href="css/font-awesome.css"><!--font_wesome_icons-->
+		<link href="//fonts.googleapis.com/css?family=Exo+2" rel="stylesheet"><!--online fonts-->
+		<link href="//fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"><!--online fonts-->
+	</head>
+	<body>
+		<!-- 用户名：<input onblur="check_uname()" onfocus="show_uname()" type="text" id="uname">
+		<span id="uname_msg"></span><br>
+		密码：<input onblur="check_upwd()" onfocus="show_upwd()" type="password" id="upwd">
+		<span id="upwd_msg"></span><br>
+		密码：<input onblur="check_upwds()" onfocus="show_upwds()" id="upwds" type="password">
+		<span id="upwds_msg"></span><br> -->
+		<!-- <button onclick="darker()">注册</button><br>
+		<div id="d1"></div> -->
+		<div class="w3ls-headding">
+				<h1><span>汽</span>车 <span>之</span>家 <span>商</span>城</h1>
+			</div>
+			<div class="agile-main">
+				<div class="agile-left">
+						
+				</div>
+				<div class="agile-right">
+					
+						<div class="agile-right-h2">
+							<h2> 用 户 注 册</h2>
+						</div>
+						<div class="w3l-name">
+							<span><i class="fa fa-user" aria-hidden="true"></i></span>
+							<input type="text" name="Username" placeholder="请输入用户名" required="" id="uname" onblur="check_uname()" onfocus="show_uname()"/>
+							<span id="uname_msg"></span>
+						</div>
+						<div class="clear"></div>
+						<div class="w3l-email">
+							<span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+							<input type="email" name="email" placeholder="请输入邮箱" required="" id="email"/>
+						</div>
+						<div class="clear"></div>
+						<div class="w3l-psw">
+							<span><i class="fa fa-lock" aria-hidden="true"></i></span>
+							<input type="password" name="Password" placeholder="请输入密码" required="" id="upwd"/>
+						</div>
+						<div class="clear"></div>
+						<div class="w3l-cpsw">
+							<span><i class="fa fa-lock" aria-hidden="true"></i></span>
+							<input type="password" name="Password" placeholder="请再输入一次密码" required=""/>
+						</div>
+						<div class="w3l-agree">
+							<input type="checkbox" class="checkbox" checked="checked">
+							<p>同意并遵守<a href="#">《用户使用协议》</a></p> 
+						</div>
+						<div class="clear"></div>
+						
+						<div class="w3l-submit">
+							<input type="submit" value="注册" onclick="darker()">
+						</div>
+					
+						<p class="wthree-p">  其他方式  </p>
+					<div class="wthree-social">
+						<a href="https://wx.qq.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> 使用手机微信登录 </a>	
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+				<footer>
+					<p>&copy; 2020 汽车之家 . All Rights Reserved | Design by <a href="https://www.mercedes-benz.com.cn/"> 梅赛德斯奔驰</a></p>
+				</footer>
+	</body>
+	<!-- 真实姓名：<input onblur="check_user_name()" onfocus="show_user_name()" type="text" id="user_name"><span id="user_name_msg"></span><br>
+	性别：<input onblur="check_gender()" onfocus="show_gender()" type="text" id="gender"><span id="gender_msg"></span><br> 
+	邮箱：<input onblur="check_email" onfocus="show_email" type="text" id="email"><span id="email_msg"></span><br>
+	手机号：<input onblur="check_phone" onfocus="show_phone" type="text" id="phone"><span id="phone_msg"></span><br>
+	-->
+</html>
