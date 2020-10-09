@@ -1,0 +1,74 @@
+/*尾部导航*/
+.byd-having{
+	width: 100%;
+	height: 40px;
+	background-color: #5D5E62;
+	text-align: center;
+}
+.byd-having>ul>li{
+	display: inline-block;
+	width: auto;
+  padding: 8px 30px;
+}
+.byd-having a{
+	text-decoration: none;
+	color: #fff;
+}
+
+
+/*轮播图*/
+.carousel-indicators li{
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+	margin: 0px 0.25rem;
+}
+.carousel-indicators .active {
+  background-color: #0AA1ED;
+}
+/* 需要重写左右箭头的样式 */
+.carousel-control-prev,
+.carousel-control-next{
+  width: 4%;
+  height: 13%;
+	top: 40%;
+  border-radius: 100%;
+  background-color: #aaa;
+}
+.carousel-control-prev{left: 3px;}
+.carousel-control-next{right: 3px;}
+
+
+/*汽车列表*/
+.byd_color a{
+	color: #000000;
+	text-decoration: none;
+}
+.byd_size{
+	border-bottom: 1px solid #000;
+}
+.byd_size1{
+	font-size: 20px;
+}
+.byd_size2{
+	color: f00;
+	font-size: 20px;
+}
+.byd_color>div>ul>.p-3{
+	width: 100%;
+	height: 20%;
+	background-color: #EDEDED;
+}
+.byd_color>div>.byd_li_one>li{
+	border: 1px solid #fff;
+}
+.byd_color>div>.byd_li_one>li>a{
+	color: #000;
+	font-size: 26px;
+}
+.byd_color>div>.byd_li_one>li>a:hover{
+	color: f00;
+}
+.hide_img{ display:none; z-index:9999; position:absolute;}
+.show_img:hover +.hide_img{ display:block}
