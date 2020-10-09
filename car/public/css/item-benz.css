@@ -1,0 +1,20 @@
+.head-benz{
+	position: relative;
+}
+.head-img{
+	margin: 0 auto;
+}
+.head-img>img{
+	width: 100%;
+	position: absolute;
+}
+.head-font{
+	position: absolute;
+	color: #fff;
+	text-align: center;
+	top: 0;
+	left: 0;
+}
+.head-font:first-child{
+	font-size: 20px;
+}
