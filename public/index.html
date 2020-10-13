@@ -1,0 +1,595 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/comm.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<!-- 头部导航 -->
+			<div class="row no-gutters justify-content-between index_head">
+				<div>
+					<ul class="breadcrumb bg-transparent">
+						<li class="breadcrumb-item"><a class="text-dark" href="#">OMC汽车首页</a></li>
+						<li class="breadcrumb-item"><a class="text-dark" href="#">网站地图</a></li>
+						<li class="breadcrumb-item"><a class="text-dark pr-2" href="#">上海</a><a class="index_head_a" href="">切换城市</a></li>
+					</ul>
+				</div>
+				<div>
+					<ul class="breadcrumb bg-transparent">
+						<li class="breadcrumb-item"><a class="text-dark" href="#">登录</a></li>
+						<li class="breadcrumb-item"><a class="text-dark" href="#">注册</a></li>
+						<li class="breadcrumb-item"><a class="text-dark" href="#">购车帮助</a></li>
+						<li class="breadcrumb-item"><a class="text-dark" href="#">意见反馈</a></li>
+						<li class="breadcrumb-item"><a class="text-dark" href="#">我的汽车商城</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- logo 搜索框 导航 -->
+			<div class="row no-gutters justify-content-between index_search">
+				<div>
+					<a href="">
+						<img class="w-75" src="img/logo.jpg" alt="">
+					</a>
+				</div>
+				<div class="row index_search_input">
+					<input type="text" placeholder="搜索品牌,车型等"><button>搜索</button>
+				</div>
+				<div class="index_search_right">
+					<span><a class="search_one" href="">首页</a></span>
+					<span><a href="">免费领劵</a></span>
+					<span><a href="">旗舰店推荐</a></span>
+				</div>
+			</div>
+			<!-- 左商品导航 -->
+			<div class="row no-gutters">
+			<div class="index_navig_left col-lg-2">
+				<ul class="list-unstyled">
+					<li><a class="navig_left_bold" href="">品牌</a></li>
+					<li>
+						<a href="">别克</a>
+						<a href="">荣威</a>
+						<a href="">雪佛兰</a>
+						<a href="">奔驰</a>
+						<a href="">比亚迪</a>
+					</li>
+					<li><a class="navig_left_bold" href="">价格</a></li>
+					<li>
+						<a href="">8万以下</a>
+						<a href="">8-10万</a>
+						<a href="">10-15万</a>
+					</li>
+					<li>
+						<a href="">15-20万</a>
+						<a href="">20-30万</a>
+						<a href="">30-50万</a>	
+					</li>
+					<li><a href="">50万以上</a></li>
+					<li><a class="navig_left_bold" href="">级别</a></li>
+					<li>
+						<a href="">SUV</a>
+						<a href="">微型车</a>
+						<a href="">小型车</a>
+					</li>
+					<li>
+						<a href="">紧凑型车</a>
+						<a href="">中型车</a>
+						<a href="">大中型车</a>
+					</li>
+					<li>
+						<a href="">MPV</a>
+						<a href="">跑车</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 右轮播图 -->
+			<div class="index_sildex col-lg-10">
+				<div class="mt-3">
+					<div id="demo" class="carousel" data-ride="carousel">
+						<!-- 轮播的图片 -->
+						<!--           宽百分百，溢出隐藏  -->
+						<div class="carousel-inner">
+							<!--           隐藏 -->
+							<div class="carousel-item active">
+								<a href="byd_list.html"><img class="w-100" src="img/bc.jpg" alt=""></a>
+							</div>
+							<div class="carousel-item">
+								<a href="byd_list.html"><img class="w-100" src="img/bk.jpg" alt=""></a>
+							</div>
+							<div class="carousel-item">
+								<a href="byd_list.html"><img class="w-100" src="img/rw.jpg" alt=""></a>
+							</div>
+							<div class="carousel-item">
+								<a href="byd_list.html"><img class="w-100" src="img/xfl.jpg" alt=""></a>
+							</div>
+							<div class="carousel-item">
+								<a href="byd_list.html"><img class="w-100" src="img/songmax_pckv.jpg" alt=""></a>
+							</div>
+						</div>
+						<!-- 轮播的指示器 -->
+						<!-- <ul class="carousel-indicators no-gutters mb-0 index_li">
+							<li data-target="#demo" data-slide-to="0" class="active"></li>
+							<li data-target="#demo" data-slide-to="1" ></li>
+							<li data-target="#demo" data-slide-to="2" ></li>
+							<li data-target="#demo" data-slide-to="3" ></li>
+							<li data-target="#demo" data-slide-to="4" ></li>
+						</ul> -->
+						<!-- 左右箭头 -->
+						<a data-slide="next" href="#demo" class="carousel-control-next">
+							<span class="carousel-control-next-icon"></span>
+						</a>
+						<a data-slide="prev" href="#demo" class="carousel-control-prev">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			</div>
+			<!-- 各二级页面跳转图片 -->
+			<div class="index_img">
+				<div class="mb-3">
+					<a href=""><img class="w-100" src="img/0%20(3).jpg" alt=""></a>
+				</div>
+				<div class="row no-gutters justify-content-between mb-3">
+					<div>
+						<a href=""><img class="img_bottom" class="w-100" src="img/0%20(1).jpg" alt=""></a>
+					</div>
+					<div>
+						<a href=""><img class="img_bottom" class="w-100" src="img/0%20(2).jpg" alt=""></a>
+					</div>
+					<div>
+						<a href=""><img class="img_bottom" class="w-100" src="img/0.jpg" alt=""></a>
+					</div>
+				</div>
+				<div class="mb-3">
+					<a href=""><img class="w-100" src="img/0%20(3).jpg" alt=""></a>
+				</div>
+			</div>
+			<!-- 别克商品列表 -->
+			<div class="list_recom mt-2 index_bk">
+			 全新别克
+			</div>
+			<div class="row no-gutters">
+				<div class="col-lg-2 bk_left">
+					<a href="">
+						<img class="w-100 bk_left_img" src="img/bk1.jpg" alt="">
+					</a>
+				</div>
+				<div class="row no-gutters bg-white pt-2 ml-0 mr-0 col-lg-10">
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="border d-flex flex-column">
+							<div class="border d-flex flex-column">
+								<div class="single_project wow fadeInLeft" deta-wow-delay=".2s">
+								<div class="work_img">
+								<img class="w-100" src="img/imgs/320%20(15).jpg" alt="">
+								<div class="project_overlay text-center">
+								<a class="fancybox button" href="" deta-fancybox-group="gallery">查看详情</a>
+							</div>
+							</div>
+							</div>
+							<p>【定金】上汽别克 全新一代别克</p>
+							<div class="border d-flex flex-column">
+								<a class="btn btn-primary btn-sm" href="">预约</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="border d-flex flex-column">
+							<div class="border d-flex flex-column">
+								<div class="single_project wow fadeInLeft" deta-wow-delay=".2s">
+								<div class="work_img">
+								<img class="w-100" src="img/imgs/320%20(15).jpg" alt="">
+								<div class="project_overlay text-center">
+								<a class="fancybox button" href="" deta-fancybox-group="gallery">查看详情</a>
+							</div>
+							</div>
+							</div>
+							<p>【定金】上汽别克 全新一代别克</p>
+							<div class="border d-flex flex-column">
+								<a class="btn btn-primary btn-sm" href="">预约</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="border d-flex flex-column">
+							<div class="border d-flex flex-column">
+								<div class="single_project wow fadeInLeft" deta-wow-delay=".2s">
+								<div class="work_img">
+								<img class="w-100" src="img/imgs/320%20(15).jpg" alt="">
+								<div class="project_overlay text-center">
+								<a class="fancybox button" href="" deta-fancybox-group="gallery">查看详情</a>
+							</div>
+							</div>
+							</div>
+							<p>【定金】上汽别克 全新一代别克</p>
+							<div class="border d-flex flex-column">
+								<a class="btn btn-primary btn-sm" href="">预约</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="border d-flex flex-column">
+							<div class="border d-flex flex-column">
+								<div class="single_project wow fadeInLeft" deta-wow-delay=".2s">
+								<div class="work_img">
+								<img class="w-100" src="img/imgs/320%20(15).jpg" alt="">
+								<div class="project_overlay text-center">
+								<a class="fancybox button" href="" deta-fancybox-group="gallery">查看详情</a>
+							</div>
+							</div>
+							</div>
+							<p>【定金】上汽别克 全新一代别克</p>
+							<div class="border d-flex flex-column">
+								<a class="btn btn-primary btn-sm" href="">预约</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 荣威商品列表 -->
+			<div class="list_recom mt-2 index_bk">
+			 全新荣威
+			</div>
+			<div class="row no-gutters">
+				<div class="col-lg-2 bk_left">
+					<a href="">
+						<img class="w-100 bk_left_img" src="img/bk1.jpg" alt="">
+					</a>
+				</div>
+				<div class="row no-gutters bg-white pt-2 ml-0 mr-0 col-lg-10">
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="border d-flex flex-column">
+							<div class="border d-flex flex-column">
+								<div class="single_project wow fadeInLeft" deta-wow-delay=".2s">
+								<div class="work_img">
+								<img class="w-100" src="img/imgs/320%20(12).jpg" alt="">
+								<div class="project_overlay text-center">
+								<a class="fancybox button" href="" deta-fancybox-group="gallery">查看详情</a>
+							</div>
+							</div>
+							</div>
+							<p>【定金】上汽荣威 全新一代荣威</p>
+							<div class="border d-flex flex-column">
+								<a class="btn btn-primary btn-sm" href="">预约</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="border d-flex flex-column">
+							<div class="border d-flex flex-column">
+								<div class="single_project wow fadeInLeft" deta-wow-delay=".2s">
+								<div class="work_img">
+								<img class="w-100" src="img/imgs/320%20(12).jpg" alt="">
+								<div class="project_overlay text-center">
+								<a class="fancybox button" href="" deta-fancybox-group="gallery">查看详情</a>
+							</div>
+							</div>
+							</div>
+							<p>【定金】上汽荣威 全新一代荣威</p>
+							<div class="border d-flex flex-column">
+								<a class="btn btn-primary btn-sm" href="">预约</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="border d-flex flex-column">
+							<div class="border d-flex flex-column">
+								<div class="single_project wow fadeInLeft" deta-wow-delay=".2s">
+								<div class="work_img">
+								<img class="w-100" src="img/imgs/320%20(12).jpg" alt="">
+								<div class="project_overlay text-center">
+								<a class="fancybox button" href="" deta-fancybox-group="gallery">查看详情</a>
+							</div>
+							</div>
+							</div>
+							<p>【定金】上汽荣威 全新一代荣威</p>
+							<div class="border d-flex flex-column">
+								<a class="btn btn-primary btn-sm" href="">预约</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="border d-flex flex-column">
+							<div class="border d-flex flex-column">
+								<div class="single_project wow fadeInLeft" deta-wow-delay=".2s">
+								<div class="work_img">
+								<img class="w-100" src="img/imgs/320%20(12).jpg" alt="">
+								<div class="project_overlay text-center">
+								<a class="fancybox button" href="" deta-fancybox-group="gallery">查看详情</a>
+							</div>
+							</div>
+							</div>
+							<p>【定金】上汽荣威 全新一代荣威</p>
+							<div class="border d-flex flex-column">
+								<a class="btn btn-primary btn-sm" href="">预约</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<!-- 雪佛兰商品列表 -->
+			<div class="list_recom mt-2 index_bk">
+			 全新雪佛兰
+			</div>
+			<div class="row no-gutters">
+				<div class="col-lg-2 bk_left">
+					<a href="">
+						<img class="w-100 bk_left_img" src="img/xfl1.jpg" alt="">
+					</a>
+				</div>
+				<div class="row no-gutters bg-white pt-2 ml-0 mr-0 col-lg-10">
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="border d-flex flex-column">
+							<div class="border d-flex flex-column">
+								<div class="single_project wow fadeInLeft" deta-wow-delay=".2s">
+								<div class="work_img">
+								<img class="w-100" src="img/imgs/320%20(12).jpg" alt="">
+								<div class="project_overlay text-center">
+								<a class="fancybox button" href="" deta-fancybox-group="gallery">查看详情</a>
+							</div>
+							</div>
+							</div>
+							<p>【定金】上汽荣威 全新一代雪佛兰</p>
+							<div class="border d-flex flex-column">
+								<a class="btn btn-primary btn-sm" href="">预约</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="border d-flex flex-column">
+							<div class="border d-flex flex-column">
+								<div class="single_project wow fadeInLeft" deta-wow-delay=".2s">
+								<div class="work_img">
+								<img class="w-100" src="img/imgs/320%20(12).jpg" alt="">
+								<div class="project_overlay text-center">
+								<a class="fancybox button" href="" deta-fancybox-group="gallery">查看详情</a>
+							</div>
+							</div>
+							</div>
+							<p>【定金】上汽荣威 全新一代雪佛兰</p>
+							<div class="border d-flex flex-column">
+								<a class="btn btn-primary btn-sm" href="">预约</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="border d-flex flex-column">
+							<div class="border d-flex flex-column">
+								<div class="single_project wow fadeInLeft" deta-wow-delay=".2s">
+								<div class="work_img">
+								<img class="w-100" src="img/imgs/320%20(12).jpg" alt="">
+								<div class="project_overlay text-center">
+								<a class="fancybox button" href="" deta-fancybox-group="gallery">查看详情</a>
+							</div>
+							</div>
+							</div>
+							<p>【定金】上汽荣威 全新一代雪佛兰</p>
+							<div class="border d-flex flex-column">
+								<a class="btn btn-primary btn-sm" href="">预约</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="border d-flex flex-column">
+							<div class="border d-flex flex-column">
+								<div class="single_project wow fadeInLeft" deta-wow-delay=".2s">
+								<div class="work_img">
+								<img class="w-100" src="img/imgs/320%20(12).jpg" alt="">
+								<div class="project_overlay text-center">
+								<a class="fancybox button" href="" deta-fancybox-group="gallery">查看详情</a>
+							</div>
+							</div>
+							</div>
+							<p>【定金】上汽荣威 全新一代雪佛兰</p>
+							<div class="border d-flex flex-column">
+								<a class="btn btn-primary btn-sm" href="">预约</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<!-- 奔驰商品列表 -->
+			<div class="list_recom mt-2 index_bk">
+			 全新奔驰
+			</div>
+			<div class="row no-gutters">
+				<div class="col-lg-2 bk_left">
+					<a href="">
+						<img class="w-100 bk_left_img" src="img/bk1.jpg" alt="">
+					</a>
+				</div>
+				<div class="row no-gutters bg-white pt-2 ml-0 mr-0 col-lg-10">
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="border d-flex flex-column">
+							<div class="border d-flex flex-column">
+								<div class="single_project wow fadeInLeft" deta-wow-delay=".2s">
+								<div class="work_img">
+								<img class="w-100" src="img/imgs/320%20(14).jpg" alt="">
+								<div class="project_overlay text-center">
+								<a class="fancybox button" href="" deta-fancybox-group="gallery">查看详情</a>
+							</div>
+							</div>
+							</div>
+							<p>【定金】上汽奔驰 全新一代奔驰</p>
+							<div class="border d-flex flex-column">
+								<a class="btn btn-primary btn-sm" href="">预约</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="border d-flex flex-column">
+							<div class="border d-flex flex-column">
+								<div class="single_project wow fadeInLeft" deta-wow-delay=".2s">
+								<div class="work_img">
+								<img class="w-100" src="img/imgs/320%20(14).jpg" alt="">
+								<div class="project_overlay text-center">
+								<a class="fancybox button" href="" deta-fancybox-group="gallery">查看详情</a>
+							</div>
+							</div>
+							</div>
+							<p>【定金】上汽奔驰 全新一代奔驰</p>
+							<div class="border d-flex flex-column">
+								<a class="btn btn-primary btn-sm" href="">预约</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="border d-flex flex-column">
+							<div class="border d-flex flex-column">
+								<div class="single_project wow fadeInLeft" deta-wow-delay=".2s">
+								<div class="work_img">
+								<img class="w-100" src="img/imgs/320%20(14).jpg" alt="">
+								<div class="project_overlay text-center">
+								<a class="fancybox button" href="" deta-fancybox-group="gallery">查看详情</a>
+							</div>
+							</div>
+							</div>
+							<p>【定金】上汽奔驰 全新一代奔驰</p>
+							<div class="border d-flex flex-column">
+								<a class="btn btn-primary btn-sm" href="">预约</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="border d-flex flex-column">
+							<div class="border d-flex flex-column">
+								<div class="single_project wow fadeInLeft" deta-wow-delay=".2s">
+								<div class="work_img">
+								<img class="w-100" src="img/imgs/320%20(14).jpg" alt="">
+								<div class="project_overlay text-center">
+								<a class="fancybox button" href="" deta-fancybox-group="gallery">查看详情</a>
+							</div>
+							</div>
+							</div>
+							<p>【定金】上汽奔驰 全新一代奔驰</p>
+							<div class="border d-flex flex-column">
+								<a class="btn btn-primary btn-sm" href="">预约</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<!-- 比亚迪商品列表 -->
+			<div class="list_recom mt-2 index_bk">
+			 全新比亚迪
+			</div>
+			<div class="row no-gutters">
+				<div class="col-lg-2 bk_left">
+					<a href="">
+						<img class="w-100 bk_left_img" src="img/bk1.jpg" alt="">
+					</a>
+				</div>
+				<div class="row no-gutters bg-white pt-2 ml-0 mr-0 col-lg-10">
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="border d-flex flex-column">
+							<div class="border d-flex flex-column">
+								<div class="single_project wow fadeInLeft" deta-wow-delay=".2s">
+								<div class="work_img">
+								<img class="w-100" src="img/imgs/320%20(14).jpg" alt="">
+								<div class="project_overlay text-center">
+								<a class="fancybox button" href="" deta-fancybox-group="gallery">查看详情</a>
+							</div>
+							</div>
+							</div>
+							<p>【定金】上汽比亚迪 全新一代比亚迪</p>
+							<div class="border d-flex flex-column">
+								<a class="btn btn-primary btn-sm" href="">预约</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="border d-flex flex-column">
+							<div class="border d-flex flex-column">
+								<div class="single_project wow fadeInLeft" deta-wow-delay=".2s">
+								<div class="work_img">
+								<img class="w-100" src="img/imgs/320%20(14).jpg" alt="">
+								<div class="project_overlay text-center">
+								<a class="fancybox button" href="" deta-fancybox-group="gallery">查看详情</a>
+							</div>
+							</div>
+							</div>
+							<p>【定金】上汽比亚迪 全新一代比亚迪</p>
+							<div class="border d-flex flex-column">
+								<a class="btn btn-primary btn-sm" href="">预约</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="border d-flex flex-column">
+							<div class="border d-flex flex-column">
+								<div class="single_project wow fadeInLeft" deta-wow-delay=".2s">
+								<div class="work_img">
+								<img class="w-100" src="img/imgs/320%20(14).jpg" alt="">
+								<div class="project_overlay text-center">
+								<a class="fancybox button" href="" deta-fancybox-group="gallery">查看详情</a>
+							</div>
+							</div>
+							</div>
+							<p>【定金】上汽比亚迪 全新一代比亚迪</p>
+							<div class="border d-flex flex-column">
+								<a class="btn btn-primary btn-sm" href="">预约</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="border d-flex flex-column">
+							<div class="border d-flex flex-column">
+								<div class="single_project wow fadeInLeft" deta-wow-delay=".2s">
+								<div class="work_img">
+								<img class="w-100" src="img/imgs/320%20(14).jpg" alt="">
+								<div class="project_overlay text-center">
+								<a class="fancybox button" href="" deta-fancybox-group="gallery">查看详情</a>
+							</div>
+							</div>
+							</div>
+							<p>【定金】上汽比亚迪 全新一代比亚迪</p>
+							<div class="border d-flex flex-column">
+								<a class="btn btn-primary btn-sm" href="">预约</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+			<div class="index_bottom_img">
+				<a href="">
+					<img class="w-100" src="img/1_1.jpg" alt="">
+				</a>
+			</div>
+			<!-- 尾部 -->
+			<div>
+				<footer>
+					<iframe class="my_footer" scrolling="no" src="footer.html"></iframe>
+				</footer>
+			</div>
+			
+        </div>
+	</body>
+</html>
