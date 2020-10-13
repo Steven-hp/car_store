@@ -1,0 +1,162 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/comm.css"/>
+	</head>
+	<body>
+		<header>
+			<iframe class="my_header" scrolling="no" src="header.html"></iframe>
+		</header>
+		<div class="container">
+			<!-- 头部导航栏 -->
+			<!-- 轮播图 -->
+			<div class="mt-3">
+				<div id="demo" class="carousel" data-ride="carousel">
+					<!-- 轮播的图片 -->
+					<!--           宽百分百，溢出隐藏  -->
+					<div class="carousel-inner">
+						<!--           隐藏 -->
+						<div class="carousel-item active">
+							<a href="byd_list.html"><img class="w-100" src="img/1920.jpg" alt=""></a>
+						</div>
+						<div class="carousel-item">
+							<a href="byd_list.html"><img class="w-100" src="img/1920x600.jpg" alt=""></a>
+						</div>
+						<div class="carousel-item">
+							<a href="byd_list.html"><img class="w-100" src="img/pc.jpg" alt=""></a>
+						</div>
+						<div class="carousel-item">
+							<a href="byd_list.html"><img class="w-100" src="img/qpr-pc.jpg" alt=""></a>
+						</div>
+						<div class="carousel-item">
+							<a href="byd_list.html"><img class="w-100" src="img/songmax_pckv.jpg" alt=""></a>
+						</div>
+					</div>
+					<!-- 轮播的指示器 -->
+					<!-- <ul class="carousel-indicators">
+						<li data-target="#demo" data-slide-to="0" class="active"></li>
+						<li data-target="#demo" data-slide-to="1" ></li>
+						<li data-target="#demo" data-slide-to="2" ></li>
+						<li data-target="#demo" data-slide-to="3" ></li>
+						<li data-target="#demo" data-slide-to="4" ></li>
+					</ul> -->
+					<!-- 左右箭头 -->
+					<a data-slide="next" href="#demo" class="carousel-control-next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+					<a data-slide="prev" href="#demo" class="carousel-control-prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+				</div>
+			</div>
+			<!-- 汽车系列列表 -->
+			<div class="byd_color row">
+				<div class="col-lg-3 no-gutters pr-0">
+					<ul class="list-unstyled byd_li_one">
+						<li class="p-3"><a class="pl-5" href="byd_list.html">快速选车</a></li>
+						<li class="p-3"><a class="pl-5" href="byd_list.html">王朝</a></li>
+						<li class="p-3"><a class="pl-5" href="byd_list.html">e系列</a></li>
+						<li class="p-3"><a class="pl-5" href="byd_list.html">新能源</a></li>
+						<li class="p-3"><a class="pl-5" href="byd_list.html">燃油车</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-9 pl-0">
+					<ul class="nav nav-tabs justify-content-around">
+									<!--                        触发事件的元素                        目标id -->
+									<li class="nav-item show_img"><a data-toggle="tab" class="nav-link active" href="#t1">汉DM</a>
+									<div class="hide_img"><a href=""><img class="w-100" src="img/11.jpg"></a></div>
+									</li>
+									<li class="nav-item show_img"><a data-toggle="tab" class="nav-link" href="#t2">2021款唐DM</a>
+									<div class="hide_img"><a href=""><img class="w-100" src="img/22.jpg"></a></div>
+									</li>
+									<li class="nav-item show_img"><a data-toggle="tab" class="nav-link" href="#t3">2021款唐EV</a>
+									<div class="hide_img"><a href=""><img class="w-100" src="img/33.jpg"></a></div>
+									</li>
+									<li class="nav-item show_img"><a data-toggle="tab" class="nav-link" href="#t4">2021款唐燃油</a>
+									<div class="hide_img"><a href=""><img class="w-100" src="img/44.jpg"></a></div>
+									</li>
+									<li class="nav-item show_img"><a data-toggle="tab" class="nav-link" href="#t5">宋经典款</a>
+									<div class="hide_img"><a href=""><img class="w-100" src="img/55.jpg"></a></div>
+									</li>
+									<li class="nav-item show_img"><a data-toggle="tab" class="nav-link" href="#t6">全新秦</a>
+									<div class="hide_img"><a href=""><img class="w-100" src="img/66.jpg"></a></div>
+									</li>
+								</ul>
+								<div class="tab-content ">
+									<!--                目标元素div.tab-pane -->
+									<div id="t1" class="tab-pane active"><a href="byd_list.html"><img class="w-100" src="img/11.jpg" ></a></div>
+									<div id="t2" class="tab-pane"><a href="byd_list.html"><img class="w-100" src="img/22.jpg" ></a></div>
+									<div id="t3" class="tab-pane"><a href="byd_list.html"><img class="w-100" src="img/33.jpg" ></a></div>
+									<div id="t4" class="tab-pane"><a href="byd_list.html"><img class="w-100" src="img/44.jpg" ></a></div>
+									<div id="t5" class="tab-pane"><a href="byd_list.html"><img class="w-100" src="img/55.jpg" ></a></div>
+									<div id="t6" class="tab-pane"><a href="byd_list.html"><img class="w-100" src="img/66.jpg" ></a></div>
+								</div>
+				</div>
+			</div>
+			<!-- 服务列表 -->
+			<div class="text-dark mt-3 font-weight-bold byd_size">$￥至尊V8服务列表</div>
+			<div class="row no-gutters mt-1">
+					<div class="col-lg-6 pr-1 pb-1 single_project wow fadeInLeft" deta-wow-delay=".2s">
+						<div class="work_img">
+							<img class="w-100" src="img/1.jpg" alt="">
+							<div class="project_overlay text-center">
+							<a class="fancybox button" href="" deta-fancybox-group="gallery">到店体验</a>
+								
+							 </div>
+							</div>
+						</div>
+					<div class="col-lg-6 pb-1 single_project wow fadeInLeft" deta-wow-delay=".2s">
+						<div class="work_img">
+						<img class="w-100" src="img/hd-0514.jpg" alt="">
+						<div class="project_overlay text-center">
+							<a class="fancybox button" href="" deta-fancybox-group="gallery">车主互动</a>
+								
+							 </div>
+							</div>
+						</div>
+					<div class="col-lg-6 pr-1 pb-1 single_project wow fadeInLeft" deta-wow-delay=".2s">
+						<div class="work_img">
+						<img class="w-100" src="img/3.jpg" alt="">
+						<div class="project_overlay text-center">
+							<a class="fancybox button" href="" deta-fancybox-group="gallery">最新活动</a>
+								
+							 </div>
+							</div>
+						</div>
+					<div class="col-lg-6 pb-1 single_project wow fadeInLeft" deta-wow-delay=".2s">
+						<div class="work_img">
+						<img class="w-100" src="img/4.jpg" alt=""></div>
+						<div class="project_overlay text-center">
+							<a class="fancybox button" href="" deta-fancybox-group="gallery">最新资讯</a>
+								
+							 </div>
+							</div>
+						</div>
+			</div>
+			<!-- 尾部导航栏 -->
+			<div>
+				<div class="byd-having">
+					<ul>
+						<li><a href="byd_list.html">体验</a></li>
+						<li><a href="byd_list.html">活动</a></li>
+						<li><a href="byd_list.html">整车</a></li>
+						<li><a href="byd_list.html">咨询</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 尾部 -->
+		<footer>
+			<iframe class="my_footer" scrolling="no" src="footer.html"></iframe>
+		</footer>
+		</div>
+	</body>
+</html>
