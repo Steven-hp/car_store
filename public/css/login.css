@@ -3,7 +3,7 @@
 	padding: 0;
 }
 body{
-	background:url(../img/651.jpg),no-repeat;
+	background:url(../img/login/651.jpg),no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -127,4 +127,7 @@ body{
 	font-size: 15px;
 	color: #b1b2b7;
 	text-decoration: none;
+}
+input{
+	outline: none;
 }

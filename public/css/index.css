@@ -3,6 +3,9 @@ a:hover{
 	text-decoration: none;
 }
 /* 头部导航栏 */
+.index_head{
+	background-color: #F1F1F1;
+}
 .index_head_a{
 	color: #f00 !important;
 }
