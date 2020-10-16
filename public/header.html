@@ -3,7 +3,7 @@
 		<meta charset="UTF-8">
 		<title>Document</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+	  <link rel="stylesheet" href="css/bootstrap.css">
 		<script src="js/jquery.min.js"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
@@ -12,25 +12,40 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="header_flex header_margin header_content_between header_bg">
-				<div class="header_pl header_pt">上海市</div>
-				<div class="header_pr">
-					<ul class="header_navig header_navig_bg">
-						<li class="header_navig_item"><a class="header_text" href="#">登录</a></li>
-						<li class="header_navig_item"><a class="header_text" href="#">注册</a></li>
-						<li class="header_navig_item"><a class="header_text_red" href="#">联系客服</a></li>
+			<!-- 头部导航 -->
+			<div class="row no-gutters justify-content-between index_head">
+				<div>
+					<ul class="breadcrumb bg-transparent mt-2">
+						<li class="breadcrumb-item"><a class="text-dark" href="#">OMC汽车首页</a></li>
+						<li class="breadcrumb-item"><a class="text-dark" href="#">网站地图</a></li>
+						<li class="breadcrumb-item"><a class="text-dark pr-2" href="#">上海</a><a class="index_head_a" href="">切换城市</a></li>
+					</ul>
+				</div>
+				<div>
+					<ul class="breadcrumb bg-transparent mt-2">
+						<li class="breadcrumb-item"><a class="text-dark" href="#">登录</a></li>
+						<li class="breadcrumb-item"><a class="text-dark" href="index_login.html">注册</a></li>
+						<li class="breadcrumb-item"><a class="text-dark" href="#">购车帮助</a></li>
+						<li class="breadcrumb-item"><a class="text-dark" href="#">意见反馈</a></li>
+						<li class="breadcrumb-item"><a class="text-dark" href="#">我的汽车商城</a></li>
 					</ul>
 				</div>
 			</div>
-			<div class="header_flex header_margin header_content_between header_mt header_pb header_bg1">
-				<div class="header_flex header_margin">
-					<div><a href="#"><img src="img/imgs/2020-09-24_083219.png" alt=""></a></div><span class="header_pt_2 header_pl_3">|</span>
-					<div class="header_pt_1 header_pl_3"><a href="#"><img src="img/imgs/2020-09-22_085820.png" alt=""></a></div>
+			<!-- logo 搜索框 导航 -->
+			<div class="row no-gutters justify-content-between index_search">
+				<div>
+					<a href="">
+						<img class="w-75" src="img/index/logo.jpg" alt="">
+					</a>
 				</div>
-				<div><i class="h1 font-weight-bold header_text_red">OMC</i></div>
-				<div class="header_d_flex"><input type="text" placeholder="搜索OMCe购" class="header_input"><button class="header_a" type="button">搜索</button></div>
-				
-				<!-- <a href="#" class="header_a"></a><span class="header_size">搜索</span> -->
+				<div class="row index_search_input">
+					<input type="text" placeholder="搜索品牌,车型等"><button>搜索</button>
+				</div>
+				<div class="index_search_right">
+					<span><a class="search_one" href="#">首页</a></span>
+					<span><a href="#">免费领劵</a></span>
+					<span><a href="omc_byd.html">旗舰店推荐</a></span>
+				</div>
 			</div>
 		</div>
 	</body>
