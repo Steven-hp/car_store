@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>汽车商城二级页面</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/comm.css"/>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				}
+			.container{
+				width: 100%;
+				max-width: 1920px;
+			}
+			img{
+				height:100%;
+				width: 100%;
+			}
+			.menuWrap{
+				position: relative;
+				width: 100%;
+				margin-left:auto;
+				margin-right: auto;
+				height: 40px;
+				line-height: 40px;
+				color: #fff;
+				bottom: 40px;
+				background: rgba(0,0,0,0.6);
+			}
+			#ul1,#ul2{
+				width: 50%;
+			}
+			#ul1{
+				float:left;
+				position: relative;
+				left: 200px;
+			}
+			#ul2{
+				float: right;
+				position: relative;
+				right: 200px;
+			}
+			.list-unstyled{
+			  /* display: flex; */
+				padding-left: 0;
+				list-style: none;
+			}
+			.menu-left{
+				display: flex;
+				float: left;
+				vertical-align: middle;
+			}
+			
+			.menu-right{
+				display: flex;
+				float: right;
+				vertical-align: middle;
+			}
+			
+			.item-a{
+				text-align: center;
+				font-size:14px;
+				height: 40px;
+				color: #fff;				
+			}
+			
+			.home-current {
+				font-size: 14px;
+				text-align: left;
+				border-bottom: 3px solid #ec3d42;
+				box-sizing: border-box;
+				height: 40px;
+			}
+			.home-current>a{color: #F00;}
+			
+			li~li{margin-left: 20px;}
+			
+			.item-b:hover{
+				font-size: 14px;
+				text-align: left;
+				border-bottom: 3px solid #ec3d42;
+				height: 40px;
+				padding-bottom: 8px;
+				color: #F00;
+			}
+			
+	    a{
+				color: #FFF;
+				text-decoration: none;
+			}
+			
+	    a:hover{
+	    	color: #F00;
+	    	text-decoration:none;
+	    }
+			
+			.li-s{
+				color: #666666;
+				padding-right: 10px;
+			}
+			#img1{
+				position: relative;
+				bottom: 56px;
+			}
+			#img2{
+				position: relative;
+				bottom: 50px;
+			}
+			
+			#img3,#img5,#img7,#img9,#img11,#wld,#klz,#kwz{			
+				position: relative;
+				bottom: 60px;
+			}
+			#img4,#img6,#img8,#img10,#mrb-xl{
+				position: relative;
+				bottom: 64px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<iframe class="my_header" scrolling="no" src="header.html"></iframe>
+		</header>
+		<div class="container">
+			<div><img src="img/banner.jpg"  alt=""></div>
+			<div class="menuWrap">
+				<div id="ul1">
+					<ul class="menu-left item-a list-unstyled">
+						<li class="home-current"><a href="#">首页</a></li>
+						<li>
+							<div>
+								<span>全部商品</span>
+							</div>
+						</li>
+						<li><a class="item-b" href="#">整车活动</a></li>
+					</ul>
+				</div>
+				<div id="ul2">
+					<ul class="menu-right item-a list-unstyled">
+						<li>
+							<div>
+								<span>快速分类</span>
+							</div>
+						</li>
+						<li class="li-s"><span>|</span></li>
+						<li><a href="#">按车系</a></li>
+						<li><a href="#">按价格</a></li>
+						<li><a href="#">按级别</a></li>
+					</ul>
+				</div>
+			</div>
+			<div>
+<!-- 		<ul class="list-unstyled">
+					<li><img src="img/one.jpg" alt=""></li>
+					<li><img src="img/two.jpg" alt=""></li>
+				</ul> -->
+				<div id="img1"><img src="img/one.jpg" alt=""></div>
+				<div id="img2"><img src="img/two.jpg" alt=""></div>
+				<div id="img3"><img src="img/three.jpg" alt=""></div>
+				<div id="img4"><img src="img/four.jpg" alt=""></div>
+				<div id="img5"><img src="img/five.jpg" alt=""></div>
+				<div id="img6"><img src="img/six.jpg" alt=""></div>
+				<div id="img7"><img src="img/seven.jpg" alt=""></div>
+				<div id="img8"><img src="img/eight.jpg" alt=""></div>
+				<div id="img9"><img src="img/nine.jpg" alt=""></div>
+				<div id="img10"><img src="img/ten.jpg" alt=""></div>
+				<div id="img11"><img src="img/eleven.jpg" alt=""></div>
+				<div id="mrb-xl"><img src="img/mrb-xl.jpg" alt=""></div>
+				<div id="wld"><img src="img/wld.jpg" alt=""></div>
+				<div id="klz"><img src="img/klz.jpg" alt=""></div>
+				<div id="kwz"><img src="img/kwz.jpg" alt=""></div>
+<!-- 		map标签
+				定义一个客户端图像映射。图像映射（image-map）指带有可点击区域的一幅图像。
+				area元素永远嵌套在map元素内部。area元素可定义图像映射中的区域。
+			  img标签中的usemap属性可引用的map标签中的id或name属性（取决于浏览器），所以我们应同时向map标签添加id和name属性。 -->
+			</div>
+		</div>
+		<!-- 尾部 -->
+		<footer>
+			<iframe class="my_footer" scrolling="no" src="footer.html"></iframe>
+		</footer>
+	</body>
+</html>
