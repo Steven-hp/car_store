@@ -1,20 +1,211 @@
-.head-benz{
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.menuWrap {
+	position: relative;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	background: rgba(0,0,0,0.6);
+	top: 16px;
+}
+
+#ul1,
+#ul2 {
+	width: 50%;
+}
+
+#ul1 {
+	float: left;
+	position: relative;
+	left: 200px;
+}
+
+#ul2 {
+	float: right;
+	position: relative;
+	right: 200px;
+}
+
+.list-unstyled {
+	/* display: flex; */
+	padding-left: 0;
+	list-style: none;
+}
+
+.menu-left {
+	display: flex;
+	float: left;
+	vertical-align: middle;
+}
+
+.menu-right {
+	display: flex;
+	float: right;
+	vertical-align: middle;
+}
+
+.item-a {
+	text-align: center;
+	font-size: 14px;
+	height: 40px;
+	color: #fff;
+}
+
+.home-current {
+	font-size: 14px;
+	text-align: left;
+	border-bottom: 3px solid #ec3d42;
+	box-sizing: border-box;
+	height: 40px;
+}
+
+a{
+	color: #fff !important
+}
+.home-current>a {
+	color: #F00;
+}
+
+li~li {
+	margin-left: 20px;
+}
+
+.item-b:hover {
+	font-size: 14px;
+	text-align: left;
+	border-bottom: 3px solid #ec3d42;
+	height: 40px;
+	padding-bottom: 8px;
+	color: #F00;
+}
+
+.li-s>li .my_a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #F00;
+	text-decoration: none;
+}
+
+.li-s {
+	color: #666666;
+	padding-right: 10px;
+}
+
+.head-gf>img {
+	width: 100%;
+}
+
+.carousel-item>img {
+	width: 100%;
+}
+
+.head-line {
+	margin-top: 50px;
+}
+
+.head-line>span {
+	color: #666666;
+	font: 36px "仿宋";
+}
+
+.head-list {
+	background: url(../images/bg.jpg) no-repeat center;
+	height: 450px;
+}
+
+.head-list>ul {
+	height: 100%;
+}
+
+.my_list {
+	padding-top: 25px;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 700px;
+	display: flex;
+	justify-content: center;
+}
+
+.my_list>li {
+	cursor: pointer;
+	width: 188px;
+	text-align: center;
+	border-right: 1px solid #fff;
+	height: 400px;
+	margin-left: 0;
+}
+
+.head-item:hover {
+	background: rgba(0, 0, 0, 0.38);
+}
+
+.item-text::before {
+	content: ">";
+	font-weight: bold;
+	font-size: 10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	line-height: 29px;
+	color: rgb(255, 255, 255);
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgb(255, 255, 255);
+	border-image: initial;
+	border-radius: 50%;
+	position: relative;
+	top: 300px;
+}
+
+.item-text>p {
+	margin-top: 310px;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+}
+
+.findmore {
+	width: 940px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.my_find {
+	position: relative;
+	margin: 40px 0;
+}
+
+.my_find1>a img {
+	height: 300px;
+}
+
+.my_find>a img {
+	width: 100%;
+}
+
+.foot-img>img {
+	width: 100%;
+}
+
+footer {
 	position: relative;
 }
-.head-img{
-	margin: 0 auto;
-}
-.head-img>img{
-	width: 100%;
+
+footer>iframe {
 	position: absolute;
-}
-.head-font{
-	position: absolute;
-	color: #fff;
-	text-align: center;
-	top: 0;
-	left: 0;
-}
-.head-font:first-child{
-	font-size: 20px;
+	top: 3000px;
 }
