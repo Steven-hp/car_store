@@ -1,0 +1,146 @@
+*{margin:0;padding:0;}
+.my_header{
+	width: 100%;
+	height: 180px;
+	border: 0;
+}
+.container {
+  width: 1300px;
+	margin: 0 auto;
+	align-items: center;
+	line-height: 3;
+}
+.search-combobox{
+	margin-left: 40px;
+	display: flex;
+	background-color: #fff;
+	text-align:left;
+	font-size: 14px;
+	color: #000;
+	/* align-items: center; */
+}
+.but{
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 0 10px;
+	background-color: #fff;
+	border: 1.5px solid #CCE5FF;
+	font-size: 12px;
+	cursor: pointer;
+}
+.list{
+	height: 125px;
+	background-color: #f3f3f7;
+}
+.list-unstyled{
+	padding-left: 40px;
+	list-style: none;
+	font-size: 14px;
+}
+.left-list{
+	display: flex;
+	justify-content: baseline;
+		/* justify-content: center; */
+	
+}
+.label{	padding-right: 25px;}
+.left{
+	display: flex;
+	height: 30px;
+	text-align: center;
+}
+.item{
+	display: block;
+	margin: 0 auto;
+	padding: 0 10px; 
+	padding-bottom: 10px;
+	height: 30px;
+	align-items: center;
+	color: #000;
+	text-decoration: none;
+	line-height：30px;
+	text-align: center;
+}
+.item:hover{
+	color: #fff;
+	background-color: #f00;
+	border-radius: 4px;
+	text-decoration: none;
+	line-height：30px;   /* 文本在容器里水平居中*/
+	text-align: center;
+	
+}
+.sort{
+	width: 100%;height: 30px;
+	margin: 20px auto;   
+	margin-bottom: 40px;
+	background-color: #fff;
+}
+.sort-typse{
+	display: block;
+	margin: 0 auto;
+	width: 8%; height: 30px;
+	padding-bottom: 12px;
+	border: 0.5px solid #CCE5FF;
+	color: #000;
+	text-decoration: none;  
+	text-align: center;  
+	float:left; 
+	font-size: 15px;
+  line-height：30px;
+}
+.sort-typse:hover{
+	height: 30px;
+	margin-top: -1px; 
+	background: #fff; 
+	border-bottom: 0.5px solid #fff;
+	border-top: 1.5px solid #f00;
+	color: #f00;
+}
+.img{
+	width: 100%; 
+	/* box-sizing: content-box; */
+	display: flex;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.img_sty{
+	width: 100%;
+	display: flex;
+	margin: 0 auto;
+	border: 1px solid #000;
+	cursor: pointer;
+}
+.font{
+	width: 25%;
+	padding-right: 5px;
+}
+.img_sty1{width: 100%;}
+.details{
+	font-size: 16px;
+	color: #333;
+	font-weight: 600;
+}
+.price{
+	font-size: 26px;
+	color:#f00;
+	margin-bottom:12px;
+	font-weight: 400;
+}
+.but1{
+	width: 100%; height: 30px;
+	display: inline-block;
+	padding: 5px;
+	background-color: #f3f3f7;
+	border: 1px solid #ccc;
+	color: #aaa;
+	border-radius: 4px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+	margin-bottom: 50px;
+	
+}
