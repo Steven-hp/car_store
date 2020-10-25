@@ -1,35 +1,41 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 	<head>
-		<meta charset="UTF-8">
-		<title>Document</title>
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/header.css"/>
-		<link rel="stylesheet" type="text/css" href="css/comm.css"/>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/comm.css">
 	</head>
 	<body>
-		<div class="container">
-			<div class="header_flex header_margin header_content_between header_bg">
-				<div class="header_pl header_pt">上海市</div>
-				<div class="header_pr">
-					<ul class="header_navig header_navig_bg">
-						<li class="header_navig_item"><a class="header_text" href="#">登录</a></li>
-						<li class="header_navig_item"><a class="header_text" href="#">注册</a></li>
-						<li class="header_navig_item"><a class="header_text_red" href="#">联系客服</a></li>
+		<div class="container-fluid">
+			<div class="container">
+				<div class="left">
+					<ul class="list-unstyled">
+						<li class="left-list">
+							<p>欢迎来到Oh My Car!</p>
+						</li>
+						<li class="left-list"><a href="#">请登录</a></li>
+						<li class="left-list"><a href="#">免费注册</a></li>
+					</ul>
+				</div>
+				<div class="right">
+					<ul class="list-unstyled breadcrumb">
+						<li class="breadcrumb-item"><a href="#">手机逛商城</a></li>
+						<li class="breadcrumb-item"><a href="#">商务合作</a></li>
+						<li class="breadcrumb-item"><a href="#">购车帮助</a></li>
+						<li class="breadcrumb-item"><a href="#">意见反馈</a></li>
+						<li class="breadcrumb-item"><a href="#">我的汽车商城</a></li>
 					</ul>
 				</div>
 			</div>
-			<div class="header_flex header_margin header_content_between header_mt header_pb header_bg1">
-				<div class="header_flex header_margin">
-					<div><a href="#"><img src="img/2020-09-24_083219.png" alt=""></a></div><span class="header_pt_2 header_pl_3">|</span>
-					<div class="header_pt_1 header_pl_3"><a href="#"><img src="img/2020-09-22_085820.png" alt=""></a></div>
-				</div>
-				<div><i class="h1 font-weight-bold header_text_red">OMC</i></div>
-				<div class="header_d_flex"><input type="text" placeholder="搜索OMCe购" class="header_input"><button class="header_a" type="button">搜索</button></div>
-				<!-- <a href="#" class="header_a"></a><span class="header_size">搜索</span> -->
+		</div>
+		<div class="container">
+			<div class="logo">
+				<img src="img/logo.png" alt="">
+			</div>
+			<div class="search">
+				<input class="search-combobox" type="text" placeholder="请输入您想搜索的内容">
+				<button class="btn" href="#">搜索</button>
 			</div>
 		</div>
 	</body>
