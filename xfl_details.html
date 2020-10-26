@@ -1,0 +1,246 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/xfl_details.css">
+		<link rel="stylesheet" type="text/css" href="css/comm.css"/>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				}
+			img{
+				width: 100%;
+			}
+			.menuWrap{
+				position: relative;
+				width: 100%;
+				margin-left:auto;
+				margin-right: auto;
+				height: 40px;
+				line-height: 40px;
+				color: #fff;
+				bottom: 40px;
+				background: rgba(0,0,0,0.6);
+			}
+			#ul1,#ul2{
+				width: 50%;
+			}
+			#ul1{
+				float:left;
+				position: relative;
+				left: 200px;
+			}
+			#ul2{
+				float: right;
+				position: relative;
+				right: 200px;
+			}
+			.list-unstyled{
+			  /* display: flex; */
+				padding-left: 0;
+				list-style: none;
+			}
+			.menu-left{
+				display: flex;
+				float: left;
+				vertical-align: middle;
+			}
+			
+			.menu-right{
+				display: flex;
+				float: right;
+				vertical-align: middle;
+			}
+			
+			.item-a{
+				text-align: center;
+				font-size:14px;
+				height: 40px;
+				color: #fff;				
+			}
+			
+			.home-current {
+				font-size: 14px;
+				text-align: left;
+				border-bottom: 3px solid #ec3d42;
+				box-sizing: border-box;
+				height: 40px;
+			}
+			.home-current>a{color: #F00;}
+			
+			li~li{margin-left: 20px;}
+			
+			.item-b:hover{
+				font-size: 14px;
+				text-align: left;
+				border-bottom: 3px solid #ec3d42;
+				height: 40px;
+				padding-bottom: 8px;
+				color: #F00;
+			}
+			
+			a{
+				color: #FFF;
+				text-decoration: none;
+			}
+			
+			a:hover{
+				color: #F00;
+				text-decoration:none;
+			}
+			
+			.li-s{
+				color: #666666;
+				padding-right: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<iframe class="my_header" scrolling="no" src="header.html"></iframe>
+		</header>
+		<div class="container">
+			<!-- 导航 -->
+			<!-- 商品详情 -->
+			<div>
+				<img class="w-100" src="img_detail/banner.jpg" alt="">
+			</div>
+			<div class="menuWrap">
+				<div id="ul1">
+					<ul class="menu-left item-a list-unstyled">
+						<li class="home-current"><a href="#">首页</a></li>
+						<li>
+							<div>
+								<span>全部商品</span>
+							</div>
+						</li>
+						<li><a class="item-b" href="#">整车活动</a></li>
+					</ul>
+				</div>
+				<div id="ul2">
+					<ul class="menu-right item-a list-unstyled">
+						<li>
+							<div>
+								<span>快速分类</span>
+							</div>
+						</li>
+						<li class="li-s"><span>|</span></li>
+						<li><a href="#">按车系</a></li>
+						<li><a href="#">按价格</a></li>
+						<li><a href="#">按级别</a></li>
+					</ul>
+				</div>
+			</div>
+			<div>
+			
+			
+			
+
+			<div class="row no-gutters mt-3">
+				<!-- 左侧 -->
+				<div class="col-sm-12 col-lg-6">
+					<div>
+						<img class="w-100" src="img_detail/i_b.jpg" alt="">
+					</div>
+					<div class="d-flex justify-content-around mt-2">
+						<div><img class="w-100 pr-1" src="img_detail/i_m.jpg" alt=""></div>
+						<div><img class="w-100 pr-1" src="img_detail/i_m.jpg" alt=""></div>
+						<div><img class="w-100 pr-1" src="img_detail/i_m.jpg" alt=""></div>
+						<div><img class="w-100 pr-1" src="img_detail/i_m.jpg" alt=""></div>
+						<div><img class="w-100" src="img_detail/i_b.jpg" alt=""></div>
+					</div>
+				</div>
+				<!-- 右侧 -->
+				<div class="col-sm-12 col-lg-6 pl-5">
+					<div class="details_size1">
+					【雪佛兰】新科沃兹 时尚中级家轿 下订享价值5100元超值大礼包
+					</div>
+					<div class="details_size mt-4 p-2 details_bg">
+						<div class="row no-gutters">
+							<div class="col-2">参考价</div>
+							<div class="col-10">18.49~28.29万元</div>
+						</div>
+						<div class="row no-gutters mb-2">
+							<div class="col-2 pt-3">在线支付</div>
+							<div class="col-10 d-flex text-center"><span class="font-weight-bold details_size2">99999</span><span class="text-danger  ml-1 details_size3">元</span></div>
+						</div>
+					</div>
+					<div class="details_size mt-2 ml-2">
+						距离活动结束还有：9天9时9分9秒 库存：库存爆满
+					</div>
+					<div class="details_size mt-4 row no-gutters">
+						<div class="mt-2">提车城市</div>
+						<div class="ml-3">
+							<select class="details_sele">
+							<option>上海</option>
+							<option>北京</option>
+							<option>天津</option>
+							<option>重庆</option>
+							<option>安徽</option>
+							<option>福建</option>
+							<option>广东</option>
+							<option>广西</option>
+							</select>
+							 </div>
+						</div>
+					<div class="details_size mt-4 row no-gutters">
+						<div>选择车型</div>
+						<div class="ml-3">
+							<div><a class="details_size btn btn-outline-dark mr-1 mb-1 details_a2" href="#">2019款 280TSI 商务版 国V</a></div>
+							<div><a class="details_size btn btn-outline-dark mr-1 mb-1 details_a2" href="#">2019款 280TSI 商务版 国VI</a></div>
+							<div><a class="details_size btn btn-outline-dark mr-1 mb-1 details_a2" href="#">2019款 280TSI 商务版 国V</a></div>
+							<div><a class="details_size btn btn-outline-dark mr-1 mb-1 details_a2" href="#">2019款 280TSI 商务版 国VI</a></div>
+							<div><a class="details_size btn btn-outline-dark mr-1 mb-1 details_a2" href="#">2019款 280TSI 商务版 国V</a></div>
+							<div><a class="details_size btn btn-outline-dark mr-1 mb-1 details_a2" href="#">2019款 280TSI 商务版 国VI</a></div>
+							<div><a class="details_size btn btn-outline-dark mr-1 mb-1 details_a2" href="#">2019款 280TSI 商务版 国V</a></div>
+							<div><a class="details_size btn btn-outline-dark mr-1 mb-1 details_a2" href="#">2019款 280TSI 商务版 国VI</a></div>
+							<div><a class="details_size btn btn-outline-dark mr-1 mb-1 details_a2" href="#">2019款 280TSI 商务版 国V</a></div>
+							<div><a class="details_size btn btn-outline-dark mr-1 mb-1 details_a2" href="#">2019款 280TSI 商务版 国VI</a></div>
+						</div>
+					</div>
+					<div class="details_size mt-4 row no-gutters">
+						<div class="mt-2">提车门店</div>
+						<div class="ml-3">
+							<select class="details_sele1">
+							<option>上海</option>
+							<option>北京</option>
+							<option>天津</option>
+							<option>重庆</option>
+							<option>安徽</option>
+							<option>福建</option>
+							<option>广东</option>
+							<option>广西</option>
+							</select>
+						</div>
+					</div>
+					<div class="mt-4">
+						<a class="details_size details_a" href="#">立即抢购</a>
+						</div>
+					<div class="details_size mt-4 row no-gutters">
+						<div class="mr-3">购买承诺</div>
+						<div><img class="w-100" src="img/imgs/2020-09-23_191812.png" alt=""></div>
+						<div class="mr-3">请放心支付，不提车可退款</div>
+					</div>
+					<div class="details_size mt-4 row no-gutters">
+						<div class="mr-3">商城优势</div>
+						<div><img class="w-100" src="img/imgs/2020-09-23_191827.png" alt=""></div>
+						<div class="mr-3">商城出品</div>
+						<div><img class="w-100" src="img/imgs/2020-09-23_191827.png" alt=""></div>
+						<div class="mr-3">价格透明</div>
+						<div><img class="w-100" src="img/imgs/2020-09-23_191827.png" alt=""></div>
+						<div>认证商家</div>
+					</div>
+				</div>
+			</div>
+		<footer>
+			<iframe class="my_footer" scrolling="no" src="footer.html"></iframe>
+		</footer>
+		</div>
+	</body>
+</html>
