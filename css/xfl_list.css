@@ -221,9 +221,10 @@
 	cursor: pointer;
 	margin: 20px auto; 
 }
-
-/* .foot{
+/* 尾部 */
+.foot{
 	position: relative;
 	margin-top: 1200px;
-	margin-bottom: 100px;
-} */
+	margin-bottom: 150px;
+	height: 250px;
+}

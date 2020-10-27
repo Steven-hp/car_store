@@ -76,52 +76,7 @@ a:hover{
 	color: #666666;
 	padding-right: 10px;
 }
-
-
-
-
-
-
-
-
-/*--弹层2--*/
-.layer1 {
-    position: absolute;
-    top: 40px;
-    width: 200px;
-    background: #fff;
-    z-index: 99;
-    font-size: 14px;
-    box-sizing: border-box;
-    box-shadow:0 4px 4px 0 rgba(0,0,0,0.20);
-}
-.layer1 .item {
-	width: 200px;
-	font-size:14px;
-	color:#333333;
-	line-height:44px;
-	clear: both;
-    border-bottom: 1px solid #e2e1ee;
-}
-.layer1 .item .link1 {
-	display: block;
-	padding-left: 20px;
-}
-/*s*/
-.layer1 .current a{
-	background: #ec3d42;
-	color: #fff;
-}
-.layer1 .zSelected a{
-	background: #ec3d42;
-	color: #fff;
-}
-.layerSeries {
-	right: 70px;
-}
-.zPrice {
-	right: -2px;
-}
-.zLevel {
-	right: -58px;
+/* 尾部 */
+.foot_hight{
+	height: 300px;
 }
